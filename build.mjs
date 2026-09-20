@@ -1,0 +1,12 @@
+import {build} from 'esbuild';
+import {mkdir,readFile,writeFile,cp} from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+execFileSync(process.execPath,['scripts/validate-news.mjs'],{stdio:'inherit'});
+await mkdir('dist',{recursive:true});
+await cp('public','dist',{recursive:true});
+await build({entryPoints:['src/main.ts'],bundle:true,minify:true,format:'esm',target:'es2022',outfile:'dist/app.js',tsconfigRaw:{compilerOptions:{experimentalDecorators:true}},define:{'ngDevMode':'false'}});
+const news=JSON.parse(await readFile('public/news.json','utf8'));
+const escape=(s)=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const content=news.articles.map(a=>`<article><h2>${escape(a.title)}</h2><p>${escape(a.summary)}</p><p>${a.sources.map(s=>`<a href="${escape(s.url)}">${escape(s.name)}</a>`).join(' · ')}</p></article>`).join('');
+await writeFile('dist/index.html',`<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI-kollen — AI-nyheter på svenska</title><meta name="description" content="Utvalda AI-nyheter från TechCrunch, The Verge och MIT Technology Review. Korta svenska sammanfattningar med länkar till originalkällorna."><meta name="theme-color" content="#2c593f"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/style.css"></head><body><ai-kollen><main class="page"><h1>AI-kollen</h1><p>Utvalda AI-nyheter på svenska. Kontrollerat ${escape(news.checkedAt)}.</p>${content}</main></ai-kollen><p id="startup-error" hidden>Den interaktiva sidan kunde inte starta. Ladda om sidan för att försöka igen.</p><noscript>JavaScript är avstängt. Källänkarna fungerar, men sidan uppdateras först när du laddar om den.</noscript><script type="module" src="/app.js"></script></body></html>`);
+console.log('Built Angular site with '+news.articles.length+' sourced stories.');

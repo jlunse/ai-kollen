@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-01-01T00:00:00Z",
+  "checkedAt": "2026-01-01T00:00:00Z",
+  "cadenceHours": 4,
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "feed": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "checkedAt": "2026-01-01T00:00:00Z",
+      "status": "unavailable",
+      "candidateCount": 0
+    },
+    {
+      "name": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence",
+      "feed": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "checkedAt": "2026-01-01T00:00:00Z",
+      "status": "unavailable",
+      "candidateCount": 0
+    },
+    {
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/",
+      "feed": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+      "checkedAt": "2026-01-01T00:00:00Z",
+      "status": "unavailable",
+      "candidateCount": 0
+    }
+  ],
+  "articles": []
+}

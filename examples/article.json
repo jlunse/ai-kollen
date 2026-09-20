@@ -1,0 +1,14 @@
+{
+  "id": "replace-with-unique-story-id",
+  "category": "Forskning",
+  "title": "Ersätt med en källstödd svensk rubrik",
+  "summary": "Ersätt med en kort svensk sammanfattning av den granskade källnotisen. Detta är en formatmall, inte en nyhet.",
+  "publishedAt": "2026-01-01T00:00:00Z",
+  "sources": [{
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/replace-with-the-actual-article-path/",
+    "originalTitle": "Replace with the exact publisher title",
+    "publishedAt": "2026-01-01T00:00:00Z",
+    "basis": "publisher_feed"
+  }]
+}
