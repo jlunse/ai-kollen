@@ -1,33 +1,176 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-01-01T00:00:00Z",
-  "checkedAt": "2026-01-01T00:00:00Z",
+  "updatedAt": "2026-10-15T02:38:47.535111+00:00",
+  "checkedAt": "2026-10-15T06:35:27.084756+00:00",
   "cadenceHours": 4,
   "sources": [
     {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/category/artificial-intelligence/",
       "feed": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "checkedAt": "2026-01-01T00:00:00Z",
-      "status": "unavailable",
-      "candidateCount": 0
+      "checkedAt": "2026-10-15T06:35:27.084756+00:00",
+      "status": "ok",
+      "candidateCount": 20
     },
     {
       "name": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence",
       "feed": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-      "checkedAt": "2026-01-01T00:00:00Z",
-      "status": "unavailable",
-      "candidateCount": 0
+      "checkedAt": "2026-10-15T06:35:27.084756+00:00",
+      "status": "ok",
+      "candidateCount": 10
     },
     {
       "name": "MIT Technology Review",
       "url": "https://www.technologyreview.com/topic/artificial-intelligence/",
       "feed": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
-      "checkedAt": "2026-01-01T00:00:00Z",
-      "status": "unavailable",
-      "candidateCount": 0
+      "checkedAt": "2026-10-15T06:35:27.084756+00:00",
+      "status": "ok",
+      "candidateCount": 6
     }
   ],
-  "articles": []
+  "articles": [
+    {
+      "id": "ricursive-chip-design",
+      "category": "Forskning",
+      "title": "Ricursive utvecklar AI för att konstruera chip",
+      "summary": "Ricursive Intelligence utvecklar AI som ska konstruera chip och lära av varje designomgång, rapporterar TechCrunch. Grundarna beskriver målet som att automatisera och snabba upp chiputveckling genom att förbättra kommande konstruktioner.",
+      "publishedAt": "2026-10-15T01:01:32+00:00",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+          "originalTitle": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
+          "publishedAt": "2026-10-15T01:01:32+00:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    },
+    {
+      "id": "openai-state-lawsuits",
+      "category": "Säkerhet",
+      "title": "Åtta amerikanska delstater stämmer OpenAI om barns säkerhet",
+      "summary": "Åtta amerikanska delstater har stämt OpenAI, rapporterar The Verge. Stämningarna anklagar företaget för att skada barn och vilseleda kunder om ChatGPT:s säkerhet. Uppgifterna är delstaternas anklagelser och innebär inte att ansvar har fastställts.",
+      "publishedAt": "2026-10-14T17:11:28-04:00",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+          "originalTitle": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+          "publishedAt": "2026-10-14T17:11:28-04:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    },
+    {
+      "id": "character-ai-data-protection",
+      "category": "Säkerhet",
+      "title": "Åklagare kräver dataskydd i Character.AI:s konkurs",
+      "summary": "Fyrtio amerikanska delstatsåklagare har lämnat in en skrivelse i Character.AI:s konkurs, rapporterar The Verge. De vill kräva skydd för konsumentdata som säljs genom konkursen. New Yorks åklagare har också offentliggjort en flerårig utredning.",
+      "publishedAt": "2026-10-14T14:47:54-04:00",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+          "originalTitle": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
+          "publishedAt": "2026-10-14T14:47:54-04:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    },
+    {
+      "id": "ai-music-controls",
+      "category": "Produkter",
+      "title": "YouTube märker AI-musik och Deezer förbereder filter",
+      "summary": "YouTube Music inför märkning av låtar som skapats helt eller delvis med AI, rapporterar TechCrunch och The Verge. Deezer planerar samtidigt ett filter för AI-genererad musik före årets slut, enligt TechCrunch.",
+      "publishedAt": "2026-10-14T18:23:46+00:00",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
+          "originalTitle": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
+          "publishedAt": "2026-10-14T18:23:46+00:00",
+          "basis": "publisher_feed"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+          "originalTitle": "YouTube sticks new labels on AI-generated songs",
+          "publishedAt": "2026-10-14T14:22:56-04:00",
+          "basis": "publisher_feed"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
+          "originalTitle": "Deezer will soon let you filter out AI-generated music",
+          "publishedAt": "2026-10-14T15:16:04+00:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-weather-ml",
+      "category": "Forskning",
+      "title": "Microsoft uppger bättre väderprognoser med maskininlärning",
+      "summary": "Microsofts forskare uppger att maskininlärning kan förbättra väderprognoser två till sex veckor framåt, rapporterar The Verge. Resultatbeskrivningen kommer från företaget och gäller längre prognoshorisonter.",
+      "publishedAt": "2026-10-14T12:05:21-04:00",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+          "originalTitle": "Microsoft has a new machine learning tool to improve weather forecasts",
+          "publishedAt": "2026-10-14T12:05:21-04:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    },
+    {
+      "id": "android-scam-protection",
+      "category": "Säkerhet",
+      "title": "Android stärker skyddet mot bedrägerier med AI",
+      "summary": "Android inför funktioner mot mobilbedrägerier, rapporterar The Verge. En inställning för förstärkt skydd i Google Messages ska rullas ut under kommande veckor och bygga vidare på befintlig bedrägeriidentifiering.",
+      "publishedAt": "2026-10-14T12:00:00-04:00",
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
+          "originalTitle": "Android is using AI to suss out scammers in Google Messages",
+          "publishedAt": "2026-10-14T12:00:00-04:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    },
+    {
+      "id": "openai-apple-records",
+      "category": "Affärer",
+      "title": "Domare ger Apple tillgång till OpenAI:s rekryteringsmaterial",
+      "summary": "En federal domare har beslutat att Apple får tillgång till OpenAI:s intervjumaterial om tidigare Apple-anställda, rapporterar TechCrunch. Beslutet i tvisten om företagshemligheter omfattar även privata meddelanden och vittnesmål från centrala personer.",
+      "publishedAt": "2026-10-13T20:36:44+00:00",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+          "originalTitle": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+          "publishedAt": "2026-10-13T20:36:44+00:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    },
+    {
+      "id": "startup-training-data",
+      "category": "Affärer",
+      "title": "AI-labb köper träningsdata från nedlagda startupbolag",
+      "summary": "AI-labb köper data från nedlagda startupbolag för att träna modeller, rapporterar MIT Technology Review. Artikeln beskriver en kryptoföretagare som har fått omkring 25 000 dollar för sin kodbas när verksamheten avvecklas.",
+      "publishedAt": "2026-10-13T09:00:00+00:00",
+      "sources": [
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+          "originalTitle": "AI labs are buying data from dead startups to train their models",
+          "publishedAt": "2026-10-13T09:00:00+00:00",
+          "basis": "publisher_feed"
+        }
+      ]
+    }
+  ]
 }

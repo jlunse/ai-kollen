@@ -4,7 +4,7 @@ const n=JSON.parse(await readFile('public/news.json','utf8'));
 const hosts={'TechCrunch':['techcrunch.com'],'The Verge':['www.theverge.com'],'MIT Technology Review':['www.technologyreview.com']};
 assert.equal(n.schemaVersion,1);assert.equal(n.cadenceHours,4);
 for(const key of ['updatedAt','checkedAt']) assert.ok(Number.isFinite(Date.parse(n[key])) && Date.parse(n[key])<=Date.now()+60000,`Invalid ${key}`);
-assert.ok(n.articles.length>=0 && n.articles.length<=12);
+assert.ok(n.articles.length>=1 && n.articles.length<=12);
 assert.equal(new Set(n.articles.map(a=>a.id)).size,n.articles.length,'Duplicate article ids');
 const seen=new Set();
 for(const a of n.articles){
